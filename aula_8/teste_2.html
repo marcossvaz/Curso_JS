@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input {
+            text-align: center;
+            height: 20px;
+            width: 100px;
+            border-radius: 5px;
+        }
+
+        #res {
+            margin-top: 20px;
+            font: 20px normal;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="txt1">
+    +
+    <input type="number" id="txt2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">O Resultado é</div>
+    <script>
+        function somar() {
+            var n1 = window.document.getElementById('txt1')
+            var n2 = window.document.getElementById('txt2')
+            var res = window.document.querySelector('div#res')
+            var cn1 = Number(n1.value)
+            var cn2 = Number(n2.value)
+            var soma = cn1 + cn2
+            res.innerHTML = `A soma de ${cn1} e ${cn2} é igual a ${soma}`
+        }
+    </script>
+</body>
+</html>
