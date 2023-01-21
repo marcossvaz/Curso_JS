@@ -3,6 +3,7 @@ var cadastro = {
     idade: 29,
 }
 
-if (cadastro.nome == "marcos") {
-    console.log(`Bem vindo ${cadastro.nome}`);
-} 
+
+if (cadastro.nome != "marcos"){
+    console.log(`Não é ${cadastro.nome}, por favor clique aqui para sair.`)
+}
