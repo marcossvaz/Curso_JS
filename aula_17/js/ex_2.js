@@ -1,4 +1,4 @@
-var n = 10;
+var n = 1;
 var nome = "marcos";
 while(n < 10){
     console.log(`marcos`);
